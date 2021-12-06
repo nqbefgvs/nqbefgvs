@@ -1,0 +1,36 @@
+<div class="book-shelf">
+  <top-bar></top-bar>
+  <div class="book-shelf-container">
+    <div class="aside">
+      <h4 class="aside-title">书籍目录</h4>
+      <book-shelf-side-bar [bookMenu]="bookMenu"></book-shelf-side-bar>
+    </div>
+    <div class="book-shelf-main">
+      <div class="tool-bar">
+        <div class="upload">
+          <svg t="1638170520741" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2340" width="24" height="24"><path d="M153.6 902.656a32.256 32.256 0 0 1 0-64h716.8a32.256 32.256 0 0 1 0 64z m390.656-665.6v494.592a32.256 32.256 0 0 1-64 0V237.056L236.032 481.28a31.744 31.744 0 1 1-45.056-45.056l294.912-295.424a36.864 36.864 0 0 1 51.2 0l294.912 294.912a31.744 31.744 0 0 1-45.056 45.056z" fill="#1976d2" p-id="2341"></path></svg>
+          <span>上传书目</span>
+        </div>
+        <div class="filter">
+          <input #filterInput placeholder="请输入要搜索的书名" (keyup)="filterName=filterInput.value">
+          <button (click)="filter()">
+            <svg t="1638172211882" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3204" width="24" height="24"><path d="M966.4 924.8l-230.4-227.2c60.8-67.2 96-156.8 96-256 0-217.6-176-390.4-390.4-390.4-217.6 0-390.4 176-390.4 390.4 0 217.6 176 390.4 390.4 390.4 99.2 0 188.8-35.2 256-96l230.4 227.2c9.6 9.6 28.8 9.6 38.4 0C979.2 950.4 979.2 934.4 966.4 924.8zM102.4 441.6c0-185.6 150.4-339.2 339.2-339.2s339.2 150.4 339.2 339.2c0 89.6-35.2 172.8-92.8 233.6-3.2 0-3.2 3.2-6.4 3.2-3.2 3.2-3.2 3.2-3.2 6.4-60.8 57.6-144 92.8-233.6 92.8C256 780.8 102.4 627.2 102.4 441.6z" p-id="3205" fill="#1976d2"></path></svg>
+            搜索书目
+          </button>
+        </div>
+      </div>
+      <div class="book-list">
+        <div class="line">
+          <span class="book-name-title"><em>书名</em></span>
+          <span class="book-suffix-title"><em>类型</em></span>
+          <span class="download-button-title"><em>操作</em></span>
+        </div>
+        <div *ngFor="let book of filteredMenu" class="line">
+          <span class="book-name">{{book.split('.')[0]}}</span>
+          <span class="book-suffix">{{book.split('.')[1]}}</span>
+          <button class="download-button">下载</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

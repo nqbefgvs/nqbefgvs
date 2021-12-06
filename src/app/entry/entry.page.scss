@@ -1,0 +1,84 @@
+.entry {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10% 0;
+}
+.left-side,
+.right-side {
+  flex: 2;
+}
+.center {
+  flex: 6;
+}
+
+// left-side section
+.left-side::after {
+  position: relative;
+  left: 100%;
+  top: 5%;
+  content: '';
+  display: block;
+  background-color: rgba(12,46,80,0.3);
+  width: 1px;
+  height: 90%;
+}
+
+// right-side section
+::ng-deep .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+::ng-deep item:nth-child(1) > .item {
+  background-color: #c04851;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(-200px);
+  //transform-origin: 100px 0;
+}
+::ng-deep item:nth-child(2) > .item {
+  background-color: #fff143;
+  transform: translate(-50%, -50%) rotate(45deg) translateX(-200px);
+}
+::ng-deep item:nth-child(3) > .item {
+  background-color: #1ba784;
+  transform: translate(-50%, -50%) rotate(90deg) translateX(-200px);
+}
+::ng-deep item:nth-child(4) > .item {
+  background-color: #2edfa3;
+  transform: translate(-50%, -50%)  rotate(135deg) translateX(-200px);
+}
+::ng-deep item:nth-child(5) > .item {
+  background-color: #1677b3;
+  transform: translate(-50%, -50%) rotate(180deg) translateX(-200px);
+}
+::ng-deep item:nth-child(6) > .item {
+  background-color: #806d9e;
+  transform: translate(-50%, -50%) rotate(224deg) translateX(-200px);
+}
+::ng-deep item:nth-child(7) > .item {
+  background-color: #b0a4e3;
+  transform: translate(-50%, -50%) rotate(270deg) translateX(-200px);
+}
+::ng-deep item:nth-child(8) > .item {
+  background-color: #4a4266;
+  transform: translate(-50%, -50%) rotate(315deg) translateX(-200px);
+}
+
+//right-side section
+.right-side::after {
+  position: relative;
+  top: 5%;
+  content: '';
+  display: block;
+  background-color: rgba(12,46,80,0.3);
+  width: 1px;
+  height: 90%;
+}

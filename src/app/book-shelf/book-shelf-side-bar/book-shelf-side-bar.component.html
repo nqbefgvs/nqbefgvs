@@ -1,0 +1,4 @@
+<div *ngFor="let menu of bookMenu, index as index" [ngStyle]="{ 'width': width * 100 + '%' }" class="menu-container">
+  <div [className]="'menu-item-' + depth" (click)="stretch(index)">{{ menu.name }}</div>
+  <book-shelf-side-bar *ngIf="stretched[index]" [width]="width * 0.8" [bookMenu]="menu.subMenu" [depth]="depth + 1"></book-shelf-side-bar>
+</div>

@@ -1,0 +1,32 @@
+.top-bar {
+  height: 80px;
+  background: #0c2e50;
+  padding: 0 40px;
+  display: flex;
+  .title {
+    flex: 1;
+    line-height: 80px;
+    color: #fff;
+    font-size: 28px;
+  }
+
+  ul {
+    display: inline-block;
+    margin: 0;
+    li {
+      line-height: 80px;
+      list-style: none;
+      display: inline-block;
+      padding: 0 20px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #4e6c8a;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

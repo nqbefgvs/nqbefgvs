@@ -1,0 +1,18 @@
+.menu-container {
+  margin: 5px auto;
+}
+
+[class^='menu-item-'] {
+  padding: 5px 0 5px 20px;
+  color: #0c2e50;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-item-1 {
+  border: #d6eeff 1px solid;
+}
+
+.menu-item-2 {
+  border: #95cbff 1px solid;
+}

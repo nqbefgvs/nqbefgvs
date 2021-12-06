@@ -1,0 +1,149 @@
+.book-shelf {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-shelf-container {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+}
+
+.aside {
+  position: relative;
+  width: 200px;
+  padding: 5px;
+  .aside-title {
+    color: #0c2e50;
+    padding-left: 10px;
+  }
+}
+
+.book-shelf-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+.tool-bar {
+  position: relative;
+  height: 120px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    content: '';
+    display: block;
+    background-color: rgba(12,46,80,0.3);
+    height: 1px;
+    width: 100%;
+  }
+}
+
+.upload {
+  height: 40px;
+  padding: 0 15px;
+  border: #1976d2 1px solid;
+  align-self: flex-end;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
+  svg {
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+  }
+  span {
+    color: #0c2e50;
+  }
+}
+
+.filter {
+  height: 40px;
+  //border: #1976d2 1px solid;
+  align-self: flex-end;
+  line-height: 40px;
+  user-select: none;
+  vertical-align: top;
+  input {
+    padding: 0 10px;
+    outline: none;
+    border: #1976d2 1px solid;
+    height: 40px;
+    width: 200px;
+    margin: 0 20px 0 0;
+    font-size: 18px;
+    vertical-align: top;
+    color: #4e6c8a;
+    box-sizing: border-box;
+  }
+  button {
+    height: 40px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: #1976d2 1px solid;
+    font-size: 18px;
+    vertical-align: top;
+    box-sizing: border-box;
+    line-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    svg {
+      position: relative;
+      top: 5px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.book-list {
+  padding: 5px 0;
+}
+
+.line {
+  display: flex;
+  padding: 6px 0;
+
+  &:nth-child(even) {
+    background-color: rgba(12,46,80,0.05);
+  }
+
+  .book-name-title {
+    flex: 1;
+  }
+
+  .book-suffix-title,
+  .download-button-title {
+    width: 100px;
+    text-align: center;
+  }
+
+  .book-name {
+    flex: 1;
+  }
+
+  .book-suffix {
+    width: 100px;
+    text-align: center;
+  }
+
+  .download-button {
+    width: 60px;
+    margin: 0 20px;
+    background-color: transparent;
+    border: #1976d2 1px solid;
+    color: #1976d2;
+    padding: 4px 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+}
