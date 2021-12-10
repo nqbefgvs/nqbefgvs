@@ -1,12 +1,12 @@
 import {NgModule} from "@angular/core";
 import {BookShelfPage} from "./book-shelf.page";
-import {ClientCommonModule} from "../client-common/client-common.module";
+import {SharedModule} from "../shared/shared.module";
 import {BookShelfSideBarComponent} from "./book-shelf-side-bar/book-shelf-side-bar.component";
 import {CommonModule} from "@angular/common";
 
 @NgModule({
   imports: [
-    ClientCommonModule,
+    SharedModule,
     CommonModule
   ],
   declarations: [

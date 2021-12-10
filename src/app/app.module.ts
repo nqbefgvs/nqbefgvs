@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {EntryModule} from "./entry/entry.module";
-import {ClientCommonModule} from "./client-common/client-common.module";
+import {SharedModule} from "./shared/shared.module";
 import {BookShelfModule} from "./book-shelf/book-shelf.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MyFormsModule} from "./my-forms/my-forms.module";
+import {ZooModule} from "./zoo/zoo.module";
 
 @NgModule({
   declarations: [
@@ -17,10 +18,11 @@ import {MyFormsModule} from "./my-forms/my-forms.module";
     BrowserModule,
     AppRoutingModule,
     EntryModule,
-    ClientCommonModule,
+    SharedModule,
     BookShelfModule,
     HttpClientModule,
-    MyFormsModule
+    MyFormsModule,
+    ZooModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
-import {NgModule} from "@angular/core";
+ import {NgModule} from "@angular/core";
 import {MyFormsPage} from "./my-forms.page";
-import {ClientCommonModule} from "../client-common/client-common.module";
+import {SharedModule} from "../shared/shared.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {Form1Component} from "./form1/form1.component";
@@ -21,7 +21,7 @@ import {
     UniqueAlterEgoValidatorDirective
   ],
   imports: [
-    ClientCommonModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     CommonModule

@@ -9,4 +9,4 @@ import {TopBarComponent} from "./top-bar/top-bar.component";
     TopBarComponent
   ]
 })
-export class ClientCommonModule { }
+export class SharedModule { }

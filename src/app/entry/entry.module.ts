@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {EntryPage} from "./entry.page";
 import {ItemComponent} from "./item/item.component";
-import {ClientCommonModule} from "../client-common/client-common.module";
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -9,7 +9,7 @@ import {ClientCommonModule} from "../client-common/client-common.module";
     ItemComponent
   ],
   imports: [
-    ClientCommonModule
+    SharedModule
   ]
 })
 export class EntryModule { }
