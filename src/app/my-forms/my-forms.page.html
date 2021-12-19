@@ -1,9 +1,12 @@
 <div class="forms">
   <top-bar></top-bar>
   <div class="main">
-    <div class="aside"></div>
+    <div class="aside">
+      <a [routerLink]="['form1']"><div class="form-link">form 1</div></a>
+      <a [routerLink]="['form2']"><div class="form-link">form 2</div></a>
+    </div>
     <div class="form-container">
-      <form2></form2>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

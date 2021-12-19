@@ -13,6 +13,7 @@
   ul {
     display: inline-block;
     margin: 0;
+    padding: 0;
     li {
       line-height: 80px;
       list-style: none;
@@ -20,10 +21,8 @@
       padding: 0 20px;
       a {
         color: #fff;
-        text-decoration: none;
         &:hover {
           color: #4e6c8a;
-          text-decoration: underline;
         }
       }
     }

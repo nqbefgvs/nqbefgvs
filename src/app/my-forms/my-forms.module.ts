@@ -10,6 +10,7 @@ import {
   IdentityRevealedValidatorDirective,
   UniqueAlterEgoValidatorDirective
 } from "./form2/form2.component";
+ import {AppRoutingModule} from "../app-routing.module";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ]
 })
 export class MyFormsModule { }

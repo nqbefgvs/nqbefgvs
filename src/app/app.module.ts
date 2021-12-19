@@ -9,6 +9,8 @@ import {BookShelfModule} from "./book-shelf/book-shelf.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MyFormsModule} from "./my-forms/my-forms.module";
 import {ZooModule} from "./zoo/zoo.module";
+import {MyChartsModule} from "./my-charts/my-charts.module";
+import {NgxEchartsModule} from "ngx-echarts";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,11 @@ import {ZooModule} from "./zoo/zoo.module";
     BookShelfModule,
     HttpClientModule,
     MyFormsModule,
-    ZooModule
+    ZooModule,
+    MyChartsModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
