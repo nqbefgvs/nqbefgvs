@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart1 {
+  width: 50%;
+}
+
+.row1 {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.row2 {
+  flex: 1;
+}
+
+.chart2 {
+  width: 50%;
+}
+
+.chart3 {
+  width: 100%;
+}
