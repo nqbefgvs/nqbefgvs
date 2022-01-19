@@ -1,10 +1,10 @@
 import {Directive, ElementRef} from "@angular/core";
 
 @Directive({
-  selector: '[shofar]'
+  selector: '[colors]'
 })
-export class ShofarDirective {
+export class ColorsDirective {
   constructor(el: ElementRef) {
-    // el.nativeElement.style.backgroundColor = 'red'
+
   }
 }

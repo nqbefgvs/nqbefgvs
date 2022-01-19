@@ -1,15 +1,23 @@
 import {NgModule} from "@angular/core";
 import {ZooPage} from "./zoo.page";
 import {SharedModule} from "../shared/shared.module";
-import {ShofarDirective} from "./directives/shofar.directive";
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { TimelineItemComponent } from './components/timeline-item/timeline-item.component';
+import {ColorsDirective} from "./directives/colors.directive";
+import { CommonModule } from "@angular/common";
+import { TimelineLineComponent } from "./components/timeline-line/timeline-line.component";
 
 @NgModule({
   imports: [
-    SharedModule
+    SharedModule,
+    CommonModule
   ],
   declarations: [
     ZooPage,
-    ShofarDirective
+    ColorsDirective,
+    TimelineComponent,
+    TimelineItemComponent,
+    TimelineLineComponent
   ]
 })
 export class ZooModule { }

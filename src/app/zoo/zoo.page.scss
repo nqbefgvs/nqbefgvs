@@ -4,28 +4,7 @@
   flex-direction: column;
 }
 
-[shofar] {
-
-  &::before {
-    position: relative;
-    top: -5px;
-    left: 5%;
-    content: '';
-    display: block;
-    border-bottom: 5px solid;
-    border-color:rgba(12,46,80,0.3);
-    width: 0;
-    height: 0;   
-  }
-
-  &::after {
-    position: relative;
-    top: 100%;
-    left: 5%;
-    content: '';
-    display: block;
-    background-color: rgba(12,46,80,0.3);
-    width: 90%;
-    height: 1px;
-  }
+.main {
+  flex: 1;
+  padding: 0 10% 10%;
 }
