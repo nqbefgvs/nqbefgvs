@@ -12,3 +12,11 @@
 .container {
     position: relative;
 }
+
+timeline-line {
+    z-index: -1;
+}
+
+timeline-item {
+    z-index: 0;
+}

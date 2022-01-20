@@ -14,6 +14,9 @@ export class TimelineItemComponent implements AfterViewInit {
   @Input()
   public position: ItemPosition
 
+  @Input()
+  public color: string
+
   @ViewChild('elem')
   public elem: any
 
@@ -31,7 +34,8 @@ export class TimelineItemComponent implements AfterViewInit {
     const elem = this.elem.nativeElement
     elem.style.position = 'absolute'
     elem.style.top = this.position.top + 'px'
-    elem.style.left = this.position.left - (elem.clientWidth/2) + 'px' 
+    elem.style.left = this.position.left - (elem.clientWidth/2) + 2 + 'px' 
+    elem.style.borderColor = this.color
   }
 
 }

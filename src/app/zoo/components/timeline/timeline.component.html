@@ -1,7 +1,7 @@
-<div (click)="expanded = !expanded" class="title" #title>
+<div (click)="switchExpanded()" class="title" #title>
   {{timelineOption.title}}
 </div>
-<div *ngIf="expanded" class="container">
-  <timeline-line *ngFor="let line of timelineOption.lines" [line]="line" [position]="calculateLinePosition(line)"></timeline-line>
-  <timeline-item *ngFor="let item of timelineOption.items" [item]="item" [position]="calculateItemPosition(item)"></timeline-item>
+<div *ngIf="expanded" class="container" #container>
+  <timeline-line *ngFor="let line of timelineOption.lines" [line]="line" [position]="calculateLinePosition(line)" [length]="totalHeight"></timeline-line>
+  <timeline-item *ngFor="let item of timelineOption.items" [item]="item" [position]="calculateItemPosition(item)" [color]="colorByLine(item.line)"></timeline-item>
 </div>
