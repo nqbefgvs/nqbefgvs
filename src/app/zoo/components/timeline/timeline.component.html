@@ -1,5 +1,5 @@
 <div (click)="switchExpanded()" class="title" #title>
-  {{timelineOption.title}}
+  {{timelineOption.title.text}}
 </div>
 <div *ngIf="expanded" class="container" #container>
   <timeline-line *ngFor="let line of timelineOption.lines" [line]="line" [position]="calculateLinePosition(line)" [length]="totalHeight"></timeline-line>

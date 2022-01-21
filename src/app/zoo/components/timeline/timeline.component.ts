@@ -26,7 +26,17 @@ export class TimelineComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
 
+  ngAfterViewInit(): void {
+    this.initTitle()
+  }
+
+  initTitle(): void {
+    const title = this.title.nativeElement
+    title.style.borderColor = this.timelineOption.title.borderColor
+    title.style.backgroundColor = this.timelineOption.title.backgroundColor
   }
 
   calculateLinePosition(line: Line): LinePosition {
